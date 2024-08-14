@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+  <!-- Image en haut -->
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/welcome1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <!-- Nom d'utilisateur -->
+  <EditText
+      android:id="@+id/username"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:ems="10"
+      android:hint="Nom d'utilisateur"
+      android:inputType="textPersonName"
+      app:layout_constraintEnd_toEndOf="@+id/imageView"
+      app:layout_constraintStart_toStartOf="@+id/imageView"
+      app:layout_constraintTop_toBottomOf="@+id/imageView"
+      android:drawableLeft="@drawable/baseline_person_pin_24"/>
+
+  <!-- Mot de passe -->
+  <EditText
+      android:id="@+id/password"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:ems="10"
+      android:hint="Mot de passe"
+      android:inputType="textPassword"
+      app:layout_constraintEnd_toEndOf="@+id/username"
+      app:layout_constraintStart_toStartOf="@+id/username"
+      app:layout_constraintTop_toBottomOf="@+id/username"
+      android:drawableLeft="@drawable/baseline_auto_awesome_24"/>
+
+  <!-- Bouton de connexion -->
+  <Button
+      android:id="@+id/login"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:text="Connexion"
+      app:layout_constraintEnd_toEndOf="@+id/password"
+      app:layout_constraintStart_toStartOf="@+id/password"
+      app:layout_constraintTop_toBottomOf="@+id/password" />
+
+  <TextView
+      android:id="@+id/tvInfo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="NO INCORRECT ATTEMPTS"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/login"
+      app:layout_constraintVertical_bias="0.146" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
